@@ -1,9 +1,11 @@
-import Navbar from "./components/Navbar/Navbar"
+import HomeHeader from "./components/Header/HomeHeader"
+import Job from "./components/Job/Job"
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <HomeHeader></HomeHeader>
+      <Job />
     </>
   )
 }

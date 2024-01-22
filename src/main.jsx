@@ -12,13 +12,20 @@ import {
 
 // Components
 import Home from './components/Layout/Home.jsx'
+import App from './App.jsx'
 
 
 // route
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
+    children: [
+      {
+        path: "/",
+        element: <App />
+      }
+    ]
   }
 ])
 
