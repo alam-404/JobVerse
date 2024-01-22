@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "1",
+        "categoryLogo": "https://em-content.zobj.net/source/apple/354/laptop_1f4bb.png",
+        "categoryName": "Software Development",
+        "jobsAvailable": 120
+    },
+    {
+        "_id": "2",
+        "categoryLogo": "https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png",
+        "categoryName": "Data Science",
+        "jobsAvailable": 300
+    },
+    {
+        "_id": "3",
+        "categoryLogo": "https://cdn-icons-png.freepik.com/512/8618/8618881.png",
+        "categoryName": "Machine Learning Engineer",
+        "jobsAvailable": 500
+    },
+    {
+        "_id": "4",
+        "categoryLogo": "https://em-content.zobj.net/source/apple/354/technologist_1f9d1-200d-1f4bb.png",
+        "categoryName": "Cybersecurity",
+        "jobsAvailable": 600
+    }
+]

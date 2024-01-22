@@ -1,11 +1,12 @@
 import HomeHeader from "./components/Header/HomeHeader"
-import Job from "./components/Job/Job"
+import JobCategory from "./components/JobCategory/JobCategory"
 
 function App() {
   return (
     <>
       <HomeHeader></HomeHeader>
-      <Job />
+      <JobCategory />
+      
     </>
   )
 }
