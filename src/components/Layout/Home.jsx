@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <Outlet />
         </div>
-        <div className="relative h-64 bg-black">
+        <div className="mt-28">
             <Footer />
         </div>
         </>
