@@ -16,6 +16,8 @@ import JobDetailsPage from './components/Layout/JobDetailsPage.jsx'
 import AppliedJobsPage from './components/Layout/AppliedJobsPage.jsx'
 import { readData } from './utils/database.js'
 import { appliedJobsLoader } from './utils/customLoader.js'
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
+import Page404 from './components/ErrorPage/page404.jsx'
 
 
 // route
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
     path: '/applied',
     element: <AppliedJobsPage />,
     loader: async () => await appliedJobsLoader()
+  },
+  {
+    path: "*",
+    element: <Page404 />
   }
 ])
 
