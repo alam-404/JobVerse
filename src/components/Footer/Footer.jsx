@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <>
-            <div className="relative h-64 bg-dark-1 flex justify-center items-center">
+            <div className="h-64 bg-dark-1 flex justify-center items-center">
                 <div className="absolute bottom-0">
                 </div>
                 <div className="flex justify-around items-center text-white">

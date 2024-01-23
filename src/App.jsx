@@ -5,9 +5,13 @@ import JobCategory from "./components/JobCategory/JobCategory"
 function App() {
   return (
     <>
-      <HomeHeader></HomeHeader>
-      <JobCategory />
-      <FeatureJobs />
+      <div className="mx-36">
+        <HomeHeader />
+      </div>
+      <div className="static">
+        <JobCategory />
+        <FeatureJobs />
+      </div>
     </>
   )
 }

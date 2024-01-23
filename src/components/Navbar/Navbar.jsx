@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -6,10 +6,10 @@ const Navbar = () => {
             <div>
                 <h1 className="text-3xl font-bold text-dark-1"><Link to='/'>JobVerse</Link></h1>
             </div>
-            <div className="me-4 text-xs font-medium">
-                <Link className="me-4 text-dark-3 hover:text-dark-4" to="/statistics">Statistics</Link>
-                <Link className="me-4 text-dark-3 hover:text-dark-4" to="/applied">Applied Jobs</Link>
-                <Link className="me-4 text-dark-3 hover:text-dark-4" to="/blog">Blog</Link>
+            <div className="me-4 text-xs font-semibold">
+                <ActiveLink to="/statistics">Statistics</ActiveLink>
+                <ActiveLink to="/applied">Applied Jobs</ActiveLink>
+                <ActiveLink to="/blog">Blog</ActiveLink>
             </div>
             <div>
                 <button className="rounded-md px-3 py-2 bg-gradient-to-r from-grad-l to-grad-r text-white hover:bg-gradient-to-l font-semibold text-xl">Start Applying</button>
@@ -17,5 +17,15 @@ const Navbar = () => {
         </div>
     );
 };
+
+const ActiveLink = ({to, children}) => {
+    return (
+            <NavLink className={
+                ({ isActive })=> isActive ? "me-4 gradient-text hover:opacity-75" : 'me-4 text-dark-3 hover:text-dark-4'
+                } to={to}>
+                {children}
+                </NavLink>
+    )
+}
 
 export default Navbar;

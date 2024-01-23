@@ -26,6 +26,9 @@
 .btn{
   background-image: linear-gradient(to right, #7E90FE, #9873FF);
 }
+.btn:hover{
+  background-image: linear-gradient(to left, #7E90FE, #9873FF);
+}
 
 .box-gradient{
   background-image: linear-gradient(to right, rgba(129, 145, 254, 0.5), rgba(152, 115, 255, 0.5));
