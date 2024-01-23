@@ -22,7 +22,7 @@ const HomeHeader = () => {
                     </div>
                 </div>
                 <div className="w-full h-full -z-20">
-                    <img src="/src/assets/images/user.png" className="w-full h-full" />
+                    <img src="/assets/images/user.png" className="w-full h-full" />
                 </div>
             </div>
         </>
