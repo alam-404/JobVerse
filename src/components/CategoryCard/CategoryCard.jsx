@@ -1,3 +1,6 @@
+// This is a mess... I messed up with design... will figure out maybe some other day.
+
+
 
 const CategoryCard = (props) => {
     const card = props.card;
