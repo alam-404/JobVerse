@@ -18,6 +18,7 @@ const Navbar = () => {
     );
 };
 
+// gives style to active navigation link
 const ActiveLink = ({to, children}) => {
     return (
             <NavLink className={

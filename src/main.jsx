@@ -10,14 +10,14 @@ import {
   RouterProvider
 } from "react-router-dom"
 
+// custom loader
+import { appliedJobsLoader } from './utils/customLoader.js'
+
 // Components
 import Home from './components/Layout/Home.jsx'
 import JobDetailsPage from './components/Layout/JobDetailsPage.jsx'
 import AppliedJobsPage from './components/Layout/AppliedJobsPage.jsx'
-import { readData } from './utils/database.js'
-import { appliedJobsLoader } from './utils/customLoader.js'
-import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
-import Page404 from './components/ErrorPage/page404.jsx'
+import Error404 from './components/ErrorPage/Error404.jsx'
 
 
 // route
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Page404 />
+    element: <Error404 />
   }
 ])
 

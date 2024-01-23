@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Page404 = () => {
+const Error404 = () => {
     return (
         <>
             <div className="flex flex-col justify-center gap-10 items-center h-screen">
@@ -23,4 +23,4 @@ const Page404 = () => {
     );
 };
 
-export default Page404;
+export default Error404;

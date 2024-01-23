@@ -57,6 +57,7 @@ const Footer = () => {
                 <div className="mx-6">
                     <hr className="h-[2px] bg-gradient-to-r from-grad-l to-grad-r opacity-40 " />
                 </div>
+                {/* CopyRights */}
                 <div className="mx-6 flex justify-between">
                     <p className="text-white text-xs">
                         &copy;2023 <b>JobVerse</b>. All Rights Reserved

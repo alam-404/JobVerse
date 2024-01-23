@@ -1,5 +1,6 @@
 // import heroicon
-import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+
 import { Link } from 'react-router-dom';
 
 const FeatureCard = (props) => {
@@ -7,13 +8,14 @@ const FeatureCard = (props) => {
     const {
         id,
         company_logo,
-        job_title, 
-        company_name, 
-        remote_or_onsite, 
-        fulltime_parttime, 
+        job_title,
+        company_name,
+        remote_or_onsite,
+        fulltime_parttime,
         location,
         salary
-    } = job
+    } = job;
+
     return (
         <>
             <div className="border rounded-md p-7 hover:border-grad-l transition-colors ease-in-out duration-1000">
@@ -34,14 +36,15 @@ const FeatureCard = (props) => {
                 </div>
                 <div className='flex items-center mt-4 text-dark-3 font-medium'>
                     <div className='me-5 flex justify-center items-center'>
-                        <MapPinIcon className='h-5 w-5 me-2'/>
+                        <MapPinIcon className='h-5 w-5 me-2' />
                         <p>{location}</p>
                     </div>
                     <div className='flex justify-center items-center'>
-                        <CurrencyDollarIcon className='h-5 w-5 me-2'/>
+                        <CurrencyDollarIcon className='h-5 w-5 me-2' />
                         <p>{salary}</p>
                     </div>
                 </div>
+                {/* View Details Button */}
                 <div className="mt-4">
                     <Link to={`/job/${id}`}>
                         <button className="btn px-5 py-2 rounded-md text-white font-semibold">View Details</button>
