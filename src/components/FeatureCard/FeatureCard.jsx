@@ -16,7 +16,7 @@ const FeatureCard = (props) => {
     } = job
     return (
         <>
-            <div className="border rounded-md p-7">
+            <div className="border rounded-md p-7 hover:border-grad-l transition-colors ease-in-out duration-1000">
                 <div>
                     <img src={company_logo} className="w-20" />
                 </div>

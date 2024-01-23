@@ -113,7 +113,7 @@ const JobDetails = () => {
                             </div>
                         </div>
                         <div className="mt-5">
-                            <button className={`${!applied ? 'btn' : 'text-white bg-dark-5'} p-3 font-semibold text-white w-full rounded-md cursor-no-drop`} disabled={applied} onClick={() => applyHandler(id)}>{!applied ? "Apply Now" : "Applied"}</button>
+                            <button className={`${!applied ? 'btn' : 'text-white bg-dark-5 cursor-no-drop'} p-3 font-semibold text-white w-full rounded-md`} disabled={applied} onClick={() => applyHandler(id)}>{!applied ? "Apply Now" : "Applied"}</button>
                         </div>
                     </div>
             </div>
