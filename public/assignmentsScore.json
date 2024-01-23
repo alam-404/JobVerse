@@ -1,0 +1,42 @@
+[
+    {
+        "assignmentNo": "Assignment-1",
+        "score": 59,
+        "totalScore": 60
+    },
+    {
+        "assignmentNo": "Assignment-2",
+        "score": 28,
+        "totalScore": 30
+    },
+    {
+        "assignmentNo": "Assignment-3",
+        "score": 44,
+        "totalScore": 50
+    },
+    {
+        "assignmentNo": "Assignment-4",
+        "score": 60,
+        "totalScore": 60
+    },
+    {
+        "assignmentNo": "Assignment-5",
+        "score": 48,
+        "totalScore": 50
+    },
+    {
+        "assignmentNo": "Assignment-6",
+        "score": 59,
+        "totalScore": 60
+    },
+    {
+        "assignmentNo": "Assignment-7",
+        "score": 0,
+        "totalScore": 60
+    },
+    {
+        "assignmentNo": "Assignment-8",
+        "score": 48,
+        "totalScore": 50
+    }
+]

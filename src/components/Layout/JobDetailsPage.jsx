@@ -11,7 +11,7 @@ import { preloadData } from "../../utils/database";
 
 const JobDetailsPage = () => {
 
-    useEffect(()=>preloadData('applied_jobs', []))
+    useEffect(() => preloadData('applied_jobs', []))
 
     return (
         <>
@@ -26,16 +26,11 @@ const JobDetailsPage = () => {
                 transition:Zoom />
 
             <header>
-                {/* Navbar */}
-                <nav className="mx-36 relative">
-                    <Navbar />
-                </nav>
+                {/* Header */}
+                <Header>Job Details</Header>
             </header>
             <section>
-                <div className="">
-                    <Header>Job Details</Header>
-                </div>
-                <div className="mt-32 mx-36">
+                <div className="mt-44 mx-36">
                     <JobDetails />
                 </div>
             </section>

@@ -1,8 +1,12 @@
+import Navbar from "../Navbar/Navbar";
 
 const HomeHeader = () => {
     return (
         <>
             <div className="bg-gradient-to-r from-grad-l to-grad-r w-full opacity-5 h- -z-10 top-0 left-0 absolute h-full overflow-hidden"></div>
+            <nav>
+                <Navbar />
+            </nav>
             <div className="grid grid-cols-2 mt-[3.7rem] overflow-hidden">
                 <div className="flex flex-col justify-center text-wrap">
                     <div>

@@ -18,6 +18,7 @@ import Home from './components/Layout/Home.jsx'
 import JobDetailsPage from './components/Layout/JobDetailsPage.jsx'
 import AppliedJobsPage from './components/Layout/AppliedJobsPage.jsx'
 import Error404 from './components/ErrorPage/Error404.jsx'
+import Statistics from './components/Statistics/Statistics.jsx'
 
 
 // route
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
     path: '/applied',
     element: <AppliedJobsPage />,
     loader: async () => await appliedJobsLoader()
+  },
+  {
+    path: '/statistics',
+    element: <Statistics />,
+    loader: () => fetch('/assignmentsScore.json')
   },
   {
     path: "*",
