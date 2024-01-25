@@ -1,17 +1,12 @@
-import { useEffect } from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import JobDetails from "../JobDetails/JobDetails";
-import Navbar from "../Navbar/Navbar";
 
 // react toastify 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { preloadData } from "../../utils/database";
 
 const JobDetailsPage = () => {
-
-    useEffect(() => preloadData('applied_jobs', []))
 
     return (
         <>

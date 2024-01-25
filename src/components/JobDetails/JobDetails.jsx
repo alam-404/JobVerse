@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 // react toastify
 import { toast } from 'react-toastify';
-import { appendData, readData, writeData } from "../../utils/database";
+import { appendData, preloadData, readData } from "../../utils/database";
 
 
 const JobDetails = () => {
@@ -24,7 +24,8 @@ const JobDetails = () => {
     const [appliedJobs, setAppliedJobs] = useState(readData('applied_jobs'))
 
     useEffect(()=>{
-        let found = appliedJobs.length > 0 ? appliedJobs.find(id => id == jobId) : 0;
+        if (!appliedJobs) preloadData("applied_jobs", [])
+        let found = appliedJobs?.length > 0 ? appliedJobs.find(id => id == jobId) : 0;
         if (found) setApplied(1);
         else setApplied(0)
     }, [jobId, appliedJobs]);
