@@ -6,19 +6,19 @@ const CategoryCard = (props) => {
     const card = props.card;
 
     return (
-        <div className="relative me-5 w-[311px] h-[243px] rounded-md">
+        <div className="relative w-[260px] h-[243px] rounded-xl overflow-hidden">
             <div>
-                <div className="bg-gradient-to-r from-grad-l to-grad-r w-full opacity-5 h-full -z-10 top-0 left-0 absolute"></div>
-                <div className="px-4 py-4">
+                <div className="bg-gradient-to-r from-grad-l to-grad-r w-full opacity-10 h-full -z-10 top-0 left-0 absolute"></div>
+                <div className="relative">
                     <div className="relative">
-                        <div className="">
-                            <div className="bg-gradient-to-r from-grad-l to-grad-r w-[70px] h-[70px] opacity-10 -z-10 top-0 left-0 absolute rounded-lg"></div>
+                        <div className="relative">
+                            <div className="bg-gradient-to-r from-grad-l to-grad-r w-[70px] h-[70px] opacity-15 -z-10 top-0 left-0 translate-x-1/2 translate-y-1/2 absolute rounded-lg"></div>
                         </div>
-                        <div className="">
-                            <img src={card.categoryLogo} className="h-[40px] w-[40px]" />
+                        <div className="absolute top-0 left-0 translate-x-1/2 translate-y-1/2 h-[70px] w-[70px] p-2">
+                            <img src={card.categoryLogo} className="w-full h-full" />
                         </div>
                     </div>
-                    <div>
+                    <div className="absolute top-[125px] left-4">
                         <p className="text-lg font-semibold text-dark-2">{card.categoryName}</p>
                         <p className="text-dark-4">{card.jobsAvailable} Jobs Available</p>
                     </div>

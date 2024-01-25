@@ -16,7 +16,7 @@ const JobCategory = () => {
                 <h1 className="mb-3 text-4xl font-bold">Job Category List</h1>
                 <p className="text-xs text-dark-3 font-medium">Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className="flex mx-auto justify-center mb-5">
+            <div className="flex mx-auto justify-center gap-4 mb-5">
                 {
                     cards.map(card => <CategoryCard key={card._id} card={card} />)
                 }
