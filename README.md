@@ -1,12 +1,23 @@
-# React + Vite
+<div align='center'>
+<img src="./public/favicon.ico" alt="representative emoji of jobverse">
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# JobVerse
 
-Currently, two official plugins are available:
+Explore thousands of job opportunities with all the information you need. It's your future. Come find it. Manage all your job application from start to finish. Get one step closer to your dream.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies
 
+- React
+- React Router
+- Tailwind CSS
+- JS
+- HTML
 
-### Live Link:
+# Live Link
+
 [JobVerse](http://job-verse.surge.sh/)
+
+<hr/>
+
+**PS**: Not mobile responsive. :')

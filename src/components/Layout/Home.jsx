@@ -16,7 +16,7 @@ const Home = () => {
     
     return (
         <>
-            <header className="mx-36">
+            <header className="mx-36 relative overflow-hidden">
                 <HomeHeader />
             </header>
             <section>
